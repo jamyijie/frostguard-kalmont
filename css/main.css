@@ -1,0 +1,277 @@
+*{
+    box-sizing:border-box;
+}
+
+/*-------------------fonts and buttons--------------------*/
+
+html{
+    font-size: 25px;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    background-color: #06131B;
+}
+
+h1, h2, h3, p, a{
+    margin-top:0;
+    margin-bottom: 0;
+}
+
+h1{
+    font-family: "Rubik Mono One";
+    font-size: 3.2rem;
+    color: #CED7E0;
+
+}
+
+h2{
+    font-family: "Rubik Mono One";
+    font-size: 1.6rem;
+    line-height: 55px;
+    color: #C7D9E5;
+}
+
+h3{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #F4EFEB;
+}
+
+p{
+    font-size: 1rem;
+    color: #F4EFEB;
+}
+
+li{
+    color:#F4EFEB;
+}
+
+img{
+    max-width:100%;
+    height:auto; 
+}
+
+a{
+    font-size: 1rem;
+    color: #FFF;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a.solid-button{
+    display: inline-block;
+    padding: 20px 32px;
+    color: #1E1E1E;
+
+    background-color: #7AFFF4;
+    border-radius: 20px;
+}
+
+a.in-text-button{
+    color:#98DEE4;
+    font-size: 1rem;
+
+    text-decoration: underline;
+}
+
+a.normal-button{
+    display: inline-block;
+    padding: 20px 32px;
+    color: #97DCE3;
+
+    border: #97DCE3 solid 1px;
+    border-radius: 20px;
+
+}
+
+/*-------------------home--------------------*/
+
+/*---------hero--------*/
+
+.home-hero{
+    background-image: url(../img/home-hero.jpg);
+    background-size: cover;         /* Makes the image cover the entire screen */
+    background-position: center;    /* Centers the image */
+    height: 100%;
+    margin-bottom: 3rem;
+
+    display:flex;
+    flex-direction: column;
+}
+
+.main-home-hero-section{
+    padding: 5rem 8.86rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.home-hero-text{
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.home-hero-text p{
+    padding-right: 3rem;
+}
+
+/*---------brand mission--------*/
+
+.brand-mission{
+    padding:3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap:1.5rem;
+}
+
+.mission-chunks{
+    display: flex;
+    flex-direction: row;
+}
+
+.mission-icon{
+    width: 50%;
+}
+
+/*---------safety tips link--------*/
+
+.safety-tips-link{
+    display: flex;
+    flex-direction: row;
+    gap:1.5rem;
+    margin-bottom: 3rem;
+}
+
+.safety-tips-link img{
+    height:80vh;
+}
+
+.saftey-tips-text{
+    padding: 2rem 2.5rem 2rem 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*---------current conditions & live updates--------*/
+
+
+.text-with-side-bullet-points{
+    height: 80vh;
+    padding: 3rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:1.5rem;
+}
+
+.side-text{
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.side-text-bar-column{
+    width: 100%;
+}
+
+.side-text-bar-column ul{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+
+/*---------training and events--------*/
+
+.middle-align-section{
+    text-align: center;
+    padding: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.image-row{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.training-cards h3{
+    width: 85%;
+}
+
+#training-cards-1{
+    background-image: url(../img/home-traning-1.jpg);
+    background-size: cover;         /* Makes the image cover the entire screen */
+    background-position: center;    /* Centers the image */
+    border-radius: 30px;
+    height: 65vh;
+    width: 35%;
+    padding-bottom: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#training-cards-2{
+    background-image: url(../img/home-traning-2.jpg);
+    background-size: cover;         /* Makes the image cover the entire screen */
+    background-position: center;    /* Centers the image */
+    border-radius: 30px;
+    height: 65vh;
+    width: 35%;
+    padding-bottom: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#training-cards-3{
+    background-image: url(../img/home-traning-3.jpg);
+    background-size: cover;         /* Makes the image cover the entire screen */
+    background-position: center;    /* Centers the image */
+    border-radius: 30px;
+    height: 65vh;
+    width: 35%;
+    padding-bottom: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#training-cards-4{
+    background-image: url(../img/home-traning-4.jpg);
+    background-size: cover;         /* Makes the image cover the entire screen */
+    background-position: center;    /* Centers the image */
+    border-radius: 30px;
+    height: 65vh;
+    width: 35%;
+    padding-bottom: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/*---------campaigns--------*/
+
+.campaign-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
