@@ -525,3 +525,18 @@ a.normal-button{
     background-position: center;    /* Centers the image */
     height: 100vh;
 }
+
+/*------recognizing-hypothermia------*/
+
+#recognizing-hypothermia{
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(6, 19, 27, 0.00) 0%, #132E35 100%);
+}
+
+.symptom-card{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1.5rem;
+}
