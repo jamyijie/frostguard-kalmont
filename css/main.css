@@ -576,3 +576,22 @@ a.normal-button {
   background-position: center; /* Centers the image */
   height: 100vh;
 }
+
+.text-with-image-section {
+  border: 10px solid yellowgreen;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+.text-block {
+  border: 10px solid salmon;
+  width: 100%;
+  padding: 1rem;
+}
+
+.image-container {
+  border: 10px solid hotpink;
+  width: 100%;
+  padding: 1rem;
+}
