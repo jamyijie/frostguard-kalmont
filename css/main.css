@@ -170,7 +170,7 @@ a.normal-button{
     justify-content: center;
     align-items: center;
     gap:1.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 }
 
 .side-text{
@@ -529,14 +529,30 @@ a.normal-button{
 /*------recognizing-hypothermia------*/
 
 #recognizing-hypothermia{
-    height: 100vh;
     background: linear-gradient(180deg, rgba(6, 19, 27, 0.00) 0%, #132E35 100%);
 }
 
 .symptom-card{
+    width:25vw;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap:1.5rem;
+
+
+}
+
+.symptom-card-text{
+    height:60vh;
+    background-color: #233644;
+    padding:1.5rem;
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    margin-bottom: 3rem;
 }
