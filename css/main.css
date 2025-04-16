@@ -99,7 +99,7 @@ a.normal-button {
   flex-direction: column;
 }
 
-.main-home-hero-section {
+.hero-left {
   padding: 5rem 8.86rem;
 
   display: flex;
@@ -108,7 +108,7 @@ a.normal-button {
   align-items: flex-start;
 }
 
-.home-hero-text {
+.hero-left-text {
   width: 80%;
 
   display: flex;
@@ -116,7 +116,7 @@ a.normal-button {
   gap: 1.5rem;
 }
 
-.home-hero-text p {
+.hero-left-text p {
   padding-right: 3rem;
 }
 
@@ -141,18 +141,18 @@ a.normal-button {
 
 /*---------safety tips link--------*/
 
-.safety-tips-link {
+.two-column-feature-image {
   display: flex;
   flex-direction: row;
   gap: 1.5rem;
   margin-bottom: 3rem;
 }
 
-.safety-tips-link img {
+.two-column-feature-image img {
   height: 80vh;
 }
 
-.saftey-tips-text {
+.two-column-feature-image-text {
   padding: 2rem 2.5rem 2rem 1.5rem;
 
   display: flex;
@@ -162,7 +162,7 @@ a.normal-button {
 
 /*---------current conditions & live updates--------*/
 
-.text-with-side-bullet-points {
+.two-grid-column {
   height: 80vh;
   padding: 3rem;
 
@@ -215,7 +215,7 @@ a.normal-button {
   width: 80%;
 }
 
-.image-row {
+.four-grid-column {
   display: flex;
   flex-direction: row;
   gap: 1rem;
@@ -376,7 +376,7 @@ a.normal-button {
 
 /*-----avalanche-sub-nav-----*/
 
-.avalanche-sub-nav {
+.sub-nav {
   height: 40vh;
   background-color: #111f2c;
   padding-right: 2rem;
@@ -414,7 +414,7 @@ a.normal-button {
 
 /*-----avalanche what to do-----*/
 
-.info-cards-section {
+.three-grid-column {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -463,7 +463,7 @@ a.normal-button {
 
 /*-----emergency contact-----*/
 
-.emergency-contact {
+.emergency-grid {
   height: 40vh;
   background-color: #132e35;
   text-align: center;
@@ -501,21 +501,6 @@ a.normal-button {
   height: 85vh;
 
   margin-bottom: 4rem;
-}
-
-/*-----hypothermia-sub-nav-----*/
-
-.hypothermia-sub-nav {
-  height: 40vh;
-  background-color: #111f2c;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
 }
 
 /*----before-you-go-hypothermia----*/
