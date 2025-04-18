@@ -1,4 +1,4 @@
-.button {
+.solid-button {
   display: inline-flex;
   height: 78px;
   align-items: center;
@@ -9,7 +9,7 @@
   border-radius: 20px;
 }
 
-.button.explore {
+.solid-button.explore {
   position: relative;
   width: fit-content;
   margin-top: -1px;
@@ -22,7 +22,7 @@
   text-decoration: underline;
 }
 
-.button {
+.solid-button {
   display: inline-flex;
   height: 78px;
   align-items: center;
@@ -37,15 +37,15 @@
   transition: transform 0.2s ease-in-out;
 }
 
-.button:hover {
+.solid-button:hover {
   transform: scale(1.05);
 }
 
-.button:focus {
+.solid-button:focus {
   outline: 2px solid #4a90e2;
 }
 
-.button.explore {
+.solid-button.explore {
   position: relative;
   width: fit-content;
   margin-top: -1px;
@@ -56,15 +56,17 @@
   letter-spacing: 0;
   line-height: normal;
   text-decoration: underline;
+  text-decoration-color: #98dee4;
 }
 @media (max-width: 768px) {
-  .button {
+  .solid-button {
     height: 60px;
     padding: 15px 0;
   }
 
-  .button.explore {
+  .solid-button.explore {
     font-size: 20px;
   }
 }
-/*------------community picture-------*/
+/*------------button colour-------*/
+
