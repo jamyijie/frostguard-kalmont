@@ -59,31 +59,6 @@ a {
   text-decoration: none;
 }
 
-a.solid-button {
-  display: inline-block;
-  padding: 20px 32px;
-  color: #1e1e1e;
-
-  background-color: #7afff4;
-  border-radius: 20px;
-}
-
-a.in-text-button {
-  color: #98dee4;
-  font-size: 1rem;
-
-  text-decoration: underline;
-}
-
-a.normal-button {
-  display: inline-block;
-  padding: 20px 32px;
-  color: #97dce3;
-
-  border: #97dce3 solid 1px;
-  border-radius: 20px;
-}
-
 /*-----------------------------------------home-------------------------------------*/
 
 /*---------hero--------*/
@@ -641,4 +616,103 @@ a.normal-button {
   height: 85vh;
 
   margin-bottom: 4rem;
+}
+/*-------------emergency-------*/
+#emergency-hero {
+  background-image: url(../img/contacts-and-emergency-hero.jpg);
+  background-size: cover; /* Makes the image cover the entire screen */
+  background-position: center; /* Centers the image */
+  height: 85vh;
+
+  margin-bottom: 4rem;
+}
+/*----button----*/
+/*----in text button-------*/
+.in-text-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #b8e6e6;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  position: relative;
+}
+
+.in-text-button .text {
+  position: relative;
+}
+
+.in-text-button .text::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 3px;
+  background-color: #b8e6e6;
+  transition: width 0.4s ease;
+}
+
+.in-text-button:hover .text::after {
+  width: 100%;
+}
+
+.in-text-button .arrow {
+  color: #87e3c2;
+  transition: transform 0.3s ease;
+}
+
+.in-text-button:hover .arrow {
+  transform: translateX(8px);
+}
+/*----solid button-------*/
+.solid-button{
+  --glow-color: rgb(122, 255, 244);
+      --glow-spread-color: rgba(52, 114, 109, 0.781);
+      --enhanced-glow-color: rgb(168, 234, 229);
+      --btn-color: rgb(14, 100, 93);
+      border: 0.25em solid var(--glow-color);
+      padding: 1em 3em;
+      color: var(--glow-color);
+      font-size: 15px;
+      font-weight: bold;
+      cursor: pointer;
+      background-color: var(--btn-color);
+      border-radius: 1em;
+      outline: none;
+      box-shadow: 0 0 1em 0.25em var(--glow-color),
+        0 0 4em 1em var(--glow-spread-color),
+        inset 0 0 0.74em 0.25em var(--glow-color);
+      text-shadow: 0 0 0.5em var(--glow-color);
+      position: relative;
+      transition: all 0.3s;
+      margin-right: 80vh;
+}
+.solid-button::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--glow-spread-color);
+  filter: blur(2em);
+  opacity: 0.7;
+  transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+}
+
+.solid-button:hover {
+  color: var(--btn-color);
+  background-color: var(--glow-color);
+  box-shadow: 0 0 1em 0.25em var(--glow-color),
+  0 0 4em 2em var(--glow-spread-color),
+  inset 0 0 0.75em 0.25em var(--glow-color);
+}
+
+.solid-button:active {
+  box-shadow: 0 0 0.6em 0.25em var(--glow-color),
+  0 0 2.5em 2em var(--glow-spread-color),
+  inset 0 0 0.5em 0.25em var(--glow-color);
 }
