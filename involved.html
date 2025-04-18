@@ -11,16 +11,34 @@
     ></script>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/explore-button.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Mono+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <section class="hero-left">
-      <img
-        src="img/involve-hero.jpg"
-        alt="it's a hero picture"
-        width="1920"
-        height="1152"
-      />
+    <header>
+      <a class="logo" href="index.html">
+        <img
+          src="img/frost-guard-logo.png"
+          alt="frost guard logo"
+          width="149"
+          height="133"
+        />
+      </a>
+      <nav>
+        <a href="">About Us</a>
+        <a href="">Winter Safety</a>
+        <a href="">Current Status</a>
+        <a href="">News&Updates</a>
+        <a href="">Get Involved</a>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </nav>
+    </header>
+    <section class="hero-left" id="involved-hero">
       <div class="hero-left-text">
         <h1>Support Lifesaving Rescues</h1>
         <p>
@@ -28,7 +46,7 @@
           support for those in need. Every contribution makes a difference—help
           save lives today!
         </p>
-        <button class="solid-button" Donate Today></button>
+        <button class="solid-button">Donate Today</button>
       </div>
     </section>
     <main class="main-grid">
@@ -51,24 +69,29 @@
         </div>
       </section>
       <section class="three-grid-column">
-        <div>
-          <i class="fa-solid fa-kit-medical fa-beat" style="color: #4a748d"></i>
-          <h3>
+        <div style="text-align: center;">
+          <i class="fa-solid fa-kit-medical fa-beat fa-7x" style="color: #4a748d" width="183" height="182"></i>
+          <br>
+          <br>
+          <p>
             <strong>$10</strong> – Provides first aid supplies for survivors
-          </h3>
+          </p>
         </div>
-        <div>
+        <div style="text-align: center;">
           <i
-            class="fa-solid fa-graduation-cap fa-beat"
-            style="color: #4a748d"
-          ></i>
-          <h3>
+            class="fa-solid fa-graduation-cap fa-beat fa-7x"
+            style="color: #4a748d"></i>
+          <br>
+          <br>
+          <p>
             <strong>$50</strong> – Helps train a rescuer in emergency response
-          </h3>
+          </p>
         </div>
-        <div>
-          <i class="fa-solid fa-mitten fa-beat" style="color: #4a748d"></i>
-          <h3><strong>$100</strong> – Funds essential rescue equipment</h3>
+        <div style="text-align: center;">
+          <i class="fa-solid fa-mitten fa-beat fa-7x" style="color: #4a748d"></i>
+          <br>
+          <br>
+          <p><strong>$100</strong> – Funds essential rescue equipment</p>
         </div>
       </section>
       <section class="two-grid-column">
@@ -127,11 +150,10 @@
             Whether you're a survivor, rescuer, or supporter, your voice
             matters—let's make a difference together!
           </p>
-
-          <button class="solid-button">
-            <span class="explore">Explore More</span>
-            <i class="fa-solid fa-arrow-right" style="color: #63e6be"></i>
-          </button>
+          <a href="#" class="in-text-button">
+            <span class="text">Explore More</span>
+            <span class="arrow"><i class="fa-solid fa-arrow-right" style="color: #b8e6e6"></i></span>
+          </a>
         </div>
 
         <figure class="image-container">
@@ -143,23 +165,6 @@
           />
         </figure>
       </section>
-
-      <main class="community-pic">
-        <section class="group">
-          <div class="overlap-group">
-            <img
-              class="subtract"
-              src="img/community.png"
-              alt="Decorative subtract shape"
-            />
-            <img
-              class="rectangle"
-              src="img/involve-community.jpg"
-              alt="Decorative rectangle image"
-            />
-          </div>
-        </section>
-      </main>
     </main>
   </body>
 </html>
