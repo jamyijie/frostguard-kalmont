@@ -59,6 +59,59 @@ a {
   text-decoration: none;
 }
 
+/*-----------------------------------------header-------------------------------------*/
+/*-----------------------------code learned from: https://www.youtube.com/watch?v=samof05Dy6A&ab_channel=OnlineTutorials--------------------------*/
+
+header {
+  width: 100%;
+  min-height: 18vh;
+  padding: 0rem 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  position: relative;
+  padding: 0;
+}
+
+header ul li {
+  position: relative;
+  list-style: none;
+  float: left;
+}
+
+header ul li a {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+header ul li a:hover {
+  background-color: #0f2a3b;
+}
+
+header ul li ul {
+  position: absolute;
+  left: 0;
+  width: 17vw;
+  background: rgba(90, 93, 99, 0.6);
+  display: none;
+}
+
+header ul li:hover ul {
+  display: block;
+}
+
+header ul li ul li {
+  position: relative;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
 /*-----------------------------------------home-------------------------------------*/
 
 /*---------hero--------*/
@@ -634,9 +687,11 @@ a {
   gap: 8px;
   color: #b8e6e6;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 1rem;
   position: relative;
+
+  text-decoration: underline;
 }
 
 .in-text-button .text {
@@ -667,27 +722,27 @@ a {
   transform: translateX(8px);
 }
 /*----solid button-------*/
-.solid-button{
+.solid-button {
   --glow-color: rgb(122, 255, 244);
-      --glow-spread-color: rgba(52, 114, 109, 0.781);
-      --enhanced-glow-color: rgb(168, 234, 229);
-      --btn-color: rgb(14, 100, 93);
-      border: 0.25em solid var(--glow-color);
-      padding: 1em 3em;
-      color: var(--glow-color);
-      font-size: 15px;
-      font-weight: bold;
-      cursor: pointer;
-      background-color: var(--btn-color);
-      border-radius: 1em;
-      outline: none;
-      box-shadow: 0 0 1em 0.25em var(--glow-color),
-        0 0 4em 1em var(--glow-spread-color),
-        inset 0 0 0.74em 0.25em var(--glow-color);
-      text-shadow: 0 0 0.5em var(--glow-color);
-      position: relative;
-      transition: all 0.3s;
-      margin-right: 80vh;
+  --glow-spread-color: rgba(52, 114, 109, 0.781);
+  --enhanced-glow-color: rgb(168, 234, 229);
+  --btn-color: rgb(14, 100, 93);
+  border: 0.25em solid var(--glow-color);
+  padding: 1em 3em;
+  color: var(--glow-color);
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: var(--btn-color);
+  border-radius: 1em;
+  outline: none;
+  box-shadow: 0 0 1em 0.25em var(--glow-color),
+    0 0 4em 1em var(--glow-spread-color),
+    inset 0 0 0.74em 0.25em var(--glow-color);
+  text-shadow: 0 0 0.5em var(--glow-color);
+  position: relative;
+  transition: all 0.3s;
+  margin-right: 80vh;
 }
 .solid-button::after {
   pointer-events: none;
@@ -707,12 +762,52 @@ a {
   color: var(--btn-color);
   background-color: var(--glow-color);
   box-shadow: 0 0 1em 0.25em var(--glow-color),
-  0 0 4em 2em var(--glow-spread-color),
-  inset 0 0 0.75em 0.25em var(--glow-color);
+    0 0 4em 2em var(--glow-spread-color),
+    inset 0 0 0.75em 0.25em var(--glow-color);
 }
 
 .solid-button:active {
   box-shadow: 0 0 0.6em 0.25em var(--glow-color),
-  0 0 2.5em 2em var(--glow-spread-color),
-  inset 0 0 0.5em 0.25em var(--glow-color);
+    0 0 2.5em 2em var(--glow-spread-color),
+    inset 0 0 0.5em 0.25em var(--glow-color);
+}
+
+/*----switch-button-----*/
+
+.switch-button-solid {
+  color: #1e1e1e;
+  display: inline-block;
+  padding: 20px 32px;
+
+  border-radius: 20px;
+  background-color: #97dce3;
+}
+
+.switch-button-ghost {
+  color: #97dce3;
+  display: inline-block;
+  padding: 20px 32px;
+
+  border-radius: 20px;
+  border: 1px solid #97dce3;
+}
+
+/*----normal-button-----*/
+
+.normal-button {
+  color: #97dce3;
+  display: inline-block;
+  padding: 20px 32px;
+
+  border-radius: 20px;
+  border: 1px solid #97dce3;
+}
+
+.normal-button:hover {
+  color: #1e1e1e;
+  display: inline-block;
+  padding: 20px 32px;
+
+  border-radius: 20px;
+  background-color: #97dce3;
 }
