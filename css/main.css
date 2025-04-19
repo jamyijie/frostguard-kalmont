@@ -997,3 +997,162 @@ header ul li ul li {
   color: #f4efeb;
   font-size: 1.2rem;
 }
+/*--trial & background update part-current status--*/
+/*--codition part--*/
+.info-card-light {
+  background-color: #111F2C;
+  width: 30%;
+  height: 30vh;
+  padding: 20px 40px;
+  border-radius: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+/* Base table styles */
+.trail-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* ensures columns are evenly spaced */
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+.trail-table th,
+.trail-table td {
+  text-align: left;
+  padding: 1.2rem 2rem;
+  vertical-align: top;
+}
+
+/* Column widths */
+.trail-table th:nth-child(1),
+.trail-table td:nth-child(1) {
+  width: 35%;
+}
+.trail-table th:nth-child(2),
+.trail-table td:nth-child(2) {
+  width: 35%;
+}
+.trail-table th:nth-child(3),
+.trail-table td:nth-child(3) {
+  width: 30%;
+}
+
+/* Header styling */
+.trail-table thead th {
+  color: #ffffff;
+  font-weight: bold;
+  border-bottom: 2px solid #2a3946;
+}
+
+/* Row styling */
+.trail-table td {
+  background: #111F2C;
+  color: #f4efeb;
+  border-top: 1px solid #2a3946;
+}
+
+/* Colored status */
+.status {
+  font-weight: bold;
+}
+.status.closed {
+  color: #ff6666;
+}
+.status.open {
+  color: #7aff99;
+}
+.status.caution {
+  color: #f9c851;
+}
+/*---footer----*/
+.footer {
+  color: white;
+  
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 2000px;
+  margin: 0 auto;
+  gap: 8rem;
+  padding: 0.2rem; 
+
+}
+
+/* Footer Sections */
+.footer-logo img {
+  width: 300px;
+  height: auto;
+}
+
+.footer-contact,
+.footer-nav,
+.footer-social {
+  flex: 1 1 200px;
+  min-width: 220px;
+  gap:5em;
+}
+
+/* Contact */
+.footer-contact p {
+  margin: 0.4rem 0;
+  font-size: 0.95rem;
+}
+
+.footer-contact p strong {
+  display: block;
+  margin-top: 1rem;
+}
+
+/* Navigation */
+.footer-nav p {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav li {
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+/* Social Section */
+.footer-social p {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.footer-social .icons {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.footer-social .icons img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) invert(1);
+}
+
+/* Footer Gradient Bar */
+.footer-bar {
+  background: linear-gradient(to right, #034872, #A0E5EA);
+  height: 60px;
+  margin-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  width: cover;
+}
