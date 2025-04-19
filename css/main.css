@@ -492,8 +492,8 @@ header ul li ul li {
 /*-----emergency contact-----*/
 
 .emergency-grid {
-  height: 40vh;
-  background-color: #132e35;
+  height: 55vh;
+  background: linear-gradient(180deg, #08151F,#1B303F, #4A748D);
   text-align: center;
 
   display: flex;
@@ -589,7 +589,7 @@ header ul li ul li {
   background-position: center; /* Centers the image */
   height: 100vh;
 }
-
+/*last part of involved*/
 .text-with-image-section {
   border: 10px;
   width: 100%;
