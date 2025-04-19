@@ -10,6 +10,12 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Mono+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -63,13 +69,7 @@
       </nav>
     </header>
 
-    <section class="hero-left">
-      <img
-        src="img/current-conditions-hero.jpg"
-        alt="it's a hero picture"
-        width="1921"
-        height="1076"
-      />
+    <section class="hero-left" id="status-hero">
       <div class="hero-left-text">
         <h1>Current conditions & live updates</h1>
         <p>
@@ -83,23 +83,23 @@
       <section class="middle-align-section">
         <h2>Breaking news & alerts</h2>
         <section class="two-grid-column" id="warning">
-          <div>
+          <div class="outline-card">
             <i
-              class="fa-solid fa-circle-exclamation fa-shake"
+              class="fa-solid fa-circle-exclamation fa-shake fa-6x"
               style="color: #ff6666"
             ></i>
             <h3>Avalanche Warning:</h3>
             <h2>High Risk</h2>
             <p>
               snowfall & strong winds have created unstable snow conditions.
-              Avoid backcountry travel!>
+              Avoid backcountry travel!
             </p>
             <p>
               <strong>Affected Areas:</strong> Grouse Mountains, Garibaldi Park
             </p>
           </div>
-          <div>
-            <i class="fa-solid fa-paw fa-beat" style="color: #7afff4"></i>
+          <div class="outline-card">
+            <i class="fa-solid fa-paw fa-beat fa-6x" style="color: #7afff4"></i>
             <h3>Wildlife Advisory:</h3>
             <h2>Bear Sightings</h2>
             <p>
@@ -110,39 +110,37 @@
           </div>
         </section>
       </section>
-      <section class="middle-align-section" id="Risk">
-        <h2>Avalanche Risk Forecast</h2>
-        <section class="two-grid-column">
-          <section class="current-risk">
-            <div>
-              <i
-                class="fa-solid fa-circle-exclamation fa-shake"
-                style="color: #ff6666"
-              ></i>
+      <section class="risk-forecast-section">
+          <h2>AVALANCHE RISK FORECAST</h2>
+          <div class="risk-layout">
+            <!-- LEFT SIDE -->
+            <div class="risk-left">
+              <div class="icon-with-text">
+                <i class="fa-solid fa-circle-exclamation fa-7x" style="color:#f47272;"></i>
+                <div class="risk-text">
+                  <h3>Current Risk Level:</h3>
+                  <h2 class="high-level">HIGH</h2>
+                  <p>Avalanches are likely; avoid backcountry travel.</p>
+                </div>
+              </div>
             </div>
-            <div>
-              <h3>Current Risk Level:</h3>
-              <h2>HIGH</h2>
-              <p>Avalanches are likely; avoid backcountry travel.</p>
+        
+            <!-- RIGHT SIDE -->
+            <div class="risk-right">
+              <h3>Key Avalanche Risk Factors:</h3>
+              <ul>
+                <li>Strong winds have created unstable snow layers.</li>
+                <li>40 cm of fresh snow in the past 24 hours increases instability.</li>
+                <li>Rising temps may trigger natural avalanches.</li>
+              </ul>
             </div>
-          </section>
-          <section class="top-right">
-            <h3>Key Avalanche Risk Factors:</h3>
-            <ul>
-              <li>Strong winds have created unstable snow layers.</li>
-              <li>
-                40 cm of fresh snow in the past 24 hours increases instability.
-              </li>
-              <li>Rising temps may trigger natural avalanches.</li>
-            </ul>
-          </section>
-        </section>
-        <section class="two-grid-column">
-          <section class="second-left">
+          </div>
+        <div class="risk-card">
+          <div class="card-left">
             <h3>Grouse Mountain:</h3>
             <h2>HIGH</h2>
-          </section>
-          <section class="second-right">
+          </div>
+          <div class="card-right">
             <ul>
               <li>
                 <strong>Hazards:</strong> Wind slabs, deep snowpack instability
@@ -152,14 +150,14 @@
                 carry proper safety gear
               </li>
             </ul>
-          </section>
-        </section>
-        <section class="two-grid-column">
-          <section class="last-left">
+          </div>
+        </div>
+        <div class="risk-card">
+          <div class="card-left">
             <h3>Garibaldi Park:</h3>
             <h2>Considerable</h2>
-          </section>
-          <section class="last-right">
+          </div>
+          <div class="card-right">
             <ul>
               <li>
                 Hazards: Recent heavy snowfall, potential for slab avalanches
@@ -169,8 +167,8 @@
                 conditions
               </li>
             </ul>
-          </section>
-        </section>
+          </div>
+        </div>
       </section>
       <section class="middle-align-section">
         <h2>Trail & Backcountry updates</h2>
