@@ -591,20 +591,21 @@ header ul li ul li {
 }
 
 .text-with-image-section {
-  border: 10px solid yellowgreen;
+  border: 10px;
   width: 100%;
   padding: 1rem;
   display: flex;
   flex-direction: row;
 }
 .text-block {
-  border: 10px solid salmon;
+  border: 10px ;
   width: 100%;
   padding: 1rem;
+  margin-top: 8rem;
 }
 
 .image-container {
-  border: 10px solid hotpink;
+  border: 10px ;
   width: 100%;
   padding: 1rem;
 }
@@ -1155,4 +1156,30 @@ header ul li ul li {
   margin-top: 2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   width: cover;
+}
+/*image*/
+.text-content {
+  flex: 1;
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 50%;
+}
+
+.image-content img {
+  max-width: 600px;
+  width: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+.two-grid-columns {
+  height: auto;
+  padding: 3rem 5rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 5rem;
 }
