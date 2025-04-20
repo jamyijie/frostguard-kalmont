@@ -89,36 +89,73 @@
           <h2>What Causes Hypothermia?</h2>
         </div>
 
-        <div class="cause-content">
-          <section class="causes-nav">
-            <a class="switch-button-solid">Environmental Factors</a>
-            <a class="switch-button-ghost">Physical & Behavioural Factors</a>
-          </section>
-
+        <ul class="tab-container">
           <p>
-            Cold, wind, and wet conditions can quickly lower body temperature.
-            Knowing these risks helps prevent dangerous situations.
+            Cold, wind, and wet conditions can quickly lower body temperature. Knowing these risks helps prevent dangerous situations.
           </p>
+          <li class="tab-buttons">
+            <ul>
+              <li>
+                <button class="tab-button active" data-tab="tab1">
+                  Environmental Factors
+                </button>
+              </li>
+              <li>
+                <button class="tab-button" data-tab="tab2">Physical & Behavioural Factors</button>
+              </li>
+            </ul>
+          </li>
+          <li class="tab-content">
+            <ul>
+              <li id="tab1" class="tab-pane active">
+                <div class="tab-content-wrapper">
+                  <div class="rounded-corners">
+                    <h3>Cold Weather Exposure</h3>
+                    <p>Outside in low temperatures without proper clothing.</p>
+                  </div>
+                  <div class="rounded-corners">
+                    <h3>Wind & Wet Conditions</h3>
+                    <p>
+                      Windchill speeds up heat loss; wet clothes make it worse.
+                    </p>
+                  </div>
+                  <div class="rounded-corners">
+                    <h3>Submersion in Cold Water</h3>
+                    <p>
+                      Falling into icy water can cause hypothermia in minutes.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li id="tab2" class="tab-pane">
+                <div class="tab-content-wrapper">
+                  <div class="rounded-corners">
+                    <h3>Exhaustion & Dehydration</h3>
+                    <p>Body loses heat faster when fatigued or dehydrated.</p>
+                  </div>
+                  <div class="rounded-corners">
+                    <h3>Inadequate Clothing</h3>
+                    <p>Wearing cotton or improper layers in freezing conditions.</p>
+                  </div>
+                  <div class="rounded-corners">
+                    <h3>Alcohol & Drug Use</h3>
+                    <p>
+                      Increases heat loss by dilating blood vessels.
+                    </p>
+                  </div>
+                   <div class="rounded-corners">
+                    <h3>Medical Conditions</h3>
+                    <p>
+                      Diabetes, malnutrition, and some medications can increase risk.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
 
-          <div class="card-row">
-            <section class="causes-card">
-              <h3>Cold Weather Exposure</h3>
-              <p>Outside in low temperatures without proper clothing.</p>
-            </section>
-
-            <section class="causes-card">
-              <h3>Wind & Wet Conditions</h3>
-              <p>Windchill speeds up heat loss; wet clothes make it worse.</p>
-            </section>
-          </div>
-
-          <div class="card-row">
-            <section class="causes-card">
-              <h3>Submersion in Cold Water</h3>
-              <p>Falling into icy water can cause hypothermia in minutes.</p>
-            </section>
-          </div>
-        </div>
       </section>
 
       <section class="sub-nav">
@@ -323,6 +360,7 @@
         </section>
       </section>
     </main>
+    <script src="js/tab.js"></script>
   </body>
   <footer class="footer">
     <div class="footer-content">

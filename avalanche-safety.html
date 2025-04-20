@@ -90,47 +90,77 @@
           <p>Understanding avalanches can save lives.</p>
         </div>
 
-        <div class="cause-content">
-          <section class="causes-nav">
-            <a class="switch-button-solid">Natural Triggers</a>
-            <a class="switch-button-ghost">Human-Caused</a>
-          </section>
-
+        <ul class="tab-container">
           <p>
             Heavy snowfall, temperature shifts, strong winds, or earthquakes can
             weaken the snowpack, causing it to slide. Recognizing these
             conditions helps adventurers assess risks.
           </p>
-
-          <div class="card-row">
-            <section class="causes-card">
-              <h3>Heavy Snowfall</h3>
-              <p>Sudden snow accumulation can overload weak layers.</p>
-            </section>
-
-            <section class="causes-card">
-              <h3>Temperature Fluctuations</h3>
-              <p>Warming can make snow layers unstable, increasing the risk.</p>
-            </section>
-          </div>
-
-          <div class="card-row">
-            <section class="causes-card">
-              <h3>Wind & Rain</h3>
-              <p>
-                Wind can move snow to form unstable slabs, and rain can weaken
-                layers.
-              </p>
-            </section>
-
-            <section class="causes-card">
-              <h3>Earthquakes & Other Natural Factors</h3>
-              <p>
-                Tremors, falling rocks, or tree collapses can trigger slides.
-              </p>
-            </section>
-          </div>
-        </div>
+          <li class="tab-buttons">
+            <ul>
+              <li>
+                <button class="tab-button active" data-tab="tab1">
+                  Natural Triggers
+                </button>
+              </li>
+              <li>
+                <button class="tab-button" data-tab="tab2">Human-Caused</button>
+              </li>
+            </ul>
+          </li>
+          <li class="tab-content">
+            <ul>
+              <li id="tab1" class="tab-pane active">
+                <div class="tab-content-wrapper">
+                  <div class="rounded-corners">
+                    <h3>Heavy Snowfall</h3>
+                    <p>Sudden snow accumulation can overload weak layers.</p>
+                  </div>
+                  <div class="rounded-corners">
+                    <h3>Temperature Fluctuations</h3>
+                    <p>
+                      Warming can make snow layers unstable, increasing the
+                      risk.
+                    </p>
+                  </div>
+                  <div class="rounded-corners">
+                    <h3>Wind & Rain</h3>
+                    <p>
+                      Wind can move snow to form unstable slabs, and rain can
+                      weaken layers.
+                    </p>
+                  </div>
+                  <div class="rounded-corners">
+                    <h3>Earthquakes & Other Natural Factors</h3>
+                    <p>
+                      Tremors, falling rocks, or tree collapses can trigger
+                      slides.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li id="tab2" class="tab-pane">
+                <div class="tab-content-wrapper">
+                  <div class="rounded-corners">
+                    <h3>Skiers & Snowboarders</h3>
+                    <p>Movement can disturb fragile snow layers.</p>
+                  </div>
+                  <div class="rounded-corners">
+                    <h3>Snowmobiles & Hikers</h3>
+                    <p>The weight and vibrations can trigger a slide.</p>
+                  </div>
+                  <div class="rounded-corners">
+                    <h3>Explosives & Construction</h3>
+                    <p>
+                      Sometimes intentional avalanches are triggered to prevent
+                      bigger disasters.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </section>
 
       <section class="sub-nav">
@@ -271,6 +301,7 @@
         </section>
       </section>
     </main>
+    <script src="js/tab.js"></script>
   </body>
   <footer class="footer">
     <div class="footer-content">
