@@ -1651,3 +1651,34 @@ p, li {
     margin-bottom: 0.3rem;
   }
 }
+@media (max-width: 768px) {
+  .what-causes {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    align-items: center;
+  }
+
+  .cause-title,
+  .tab-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .tab-content-wrapper {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .rounded-corners {
+    width: 100%;
+  }
+  .tab-buttons ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .tab-button {
+    font-size: 0.9rem;
+    padding: 12px 24px;
+    text-align: center;
+  }
+}
