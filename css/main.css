@@ -1929,7 +1929,7 @@ a.link-box p {
 
   .trail-table td {
     text-align: left;
-    padding: 0.8rem 1rem;
+    
     position: relative;
     white-space: normal;
   }
@@ -1979,10 +1979,5 @@ a.link-box p {
     overflow-x: auto;
     width: 100%;
   }
-  h1 {
-    font-size: 3.2rem;
-  }
-  h1 {
-    font-size: clamp(2rem, 4vw, 3.2rem);
-  }
+ 
 }
