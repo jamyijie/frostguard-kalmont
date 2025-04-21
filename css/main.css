@@ -1232,12 +1232,12 @@ a.link-box p {
   /*---------header--------*/
 
   header {
-    padding: 0.5rem 2rem;
+    padding: 1.8rem 1rem;
   }
 
   header nav {
     position: absolute;
-    width: 100%;
+    width: 120%;
     top: 18vh;
     left: 0;
     background: rgba(90, 93, 99, 0.9);
@@ -1524,6 +1524,7 @@ a.link-box p {
 
   #what-to-do-avalanche {
     height: auto;
+    padding: 2rem 0rem;
   }
 
   .blue-text-box {
@@ -1775,7 +1776,7 @@ a.link-box p {
   }
 
   .blue-text-box {
-    height: 80vh;
+    height: 40vh;
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
@@ -1790,6 +1791,22 @@ a.link-box p {
     align-items: center;
     gap: 1rem;
     margin-bottom: 0rem;
+  }
+
+  #hypothermia-emergency-response {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  #first-aid-bg {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  #status-hero {
+    height: auto;
+    min-height: 80vh;
+    padding: 3rem 1rem;
   }
 }
 
@@ -1850,7 +1867,23 @@ a.link-box p {
   .risk-card {
     flex-direction: column;
     text-align: center;
-    
+  }
+
+  .risk-forecast-section {
+    padding: 0rem 1rem;
+  }
+
+  .risk-card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: linear-gradient(to right, #243644, rgba(90, 135, 170, 0%));
+    padding: 2rem 1rem;
+    border-radius: 20px;
+    margin-top: 2rem;
+    gap: 3rem;
+    flex-wrap: wrap;
+    max-width: 100%;
   }
 
   .card-left,
@@ -1900,7 +1933,7 @@ a.link-box p {
     word-break: break-word;
     line-height: 1.2;
     padding: 0 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
   }
   .info-card-light {
     width: 100%; /* Stack vertically on small screens */
@@ -1912,6 +1945,27 @@ a.link-box p {
   .trail-table td,
   .trail-table tr {
     display: block;
+    width: 100%;
+  }
+
+  .trail-table th,
+  .trail-table td {
+    text-align: left;
+    padding: 1.2rem 2rem;
+    vertical-align: top;
+  }
+
+  /* Column widths */
+  .trail-table th:nth-child(1),
+  .trail-table td:nth-child(1) {
+    width: 100%;
+  }
+  .trail-table th:nth-child(2),
+  .trail-table td:nth-child(2) {
+    width: 100%;
+  }
+  .trail-table th:nth-child(3),
+  .trail-table td:nth-child(3) {
     width: 100%;
   }
 
@@ -1929,9 +1983,14 @@ a.link-box p {
 
   .trail-table td {
     text-align: left;
-    
+
     position: relative;
     white-space: normal;
+  }
+
+  .trail-table tr td {
+    width: 50vw;
+    padding: 0rem;
   }
 
   .trail-table td::before {
@@ -1979,5 +2038,4 @@ a.link-box p {
     overflow-x: auto;
     width: 100%;
   }
- 
 }
