@@ -1794,26 +1794,155 @@ a.link-box p {
 }
 
 /*--fix--*/
-.hero-middle,
-#emergency-hero,
-#status-hero,
-#involved-hero,
-#before-you-go-avalanche,
-#before-you-go-hypothermia,
-#hypothermia-emergency-response,
-#first-aid-bg {
-  height: auto;
-  min-height: 100vh;
-  padding: 3rem 1rem;
+.alert-icon {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #f47272;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: #06131b;
+  margin: 0 auto;
+  margin-bottom: -2.5rem;
+  z-index: 2;
+  position: relative;
 }
-/*--breakpoint--*/
-.footer-content,
-.two-grid-columns {
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
+
+/* Mobile fix */
+@media (max-width: 65em) {
+  .alert-icon {
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+    margin-bottom: -1.5rem;
+  }
+  .outline-card {
+    position: relative;
+    padding-top: 2rem;
+    height: 80vh;
+    width: 40vh;
+  }
 }
-@media (max-width: 768px) {
+
+/* 🔽 Responsive fixes for 65em and below (~1040px) */
+@media (max-width: 65em) {
+  .risk-layout {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .icon-with-text {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .risk-text h2.high-level {
+    font-size: 1.6rem;
+  }
+
+  .risk-right {
+    width: 100%;
+  }
+
+  .risk-card {
+    flex-direction: column;
+    text-align: center;
+    
+  }
+
+  .card-left,
+  .card-right {
+    width: 100%;
+  }
+
+  .card-right ul {
+    padding-left: 0;
+  }
+}
+
+/*--change--*/
+@media (max-width: 65em) {
+  .what-causes {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    align-items: center;
+  }
+
+  .cause-title,
+  .tab-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .tab-content-wrapper {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .rounded-corners {
+    width: 100%;
+  }
+  .tab-buttons ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .tab-button {
+    font-size: 0.9rem;
+    padding: 12px 24px;
+    text-align: center;
+  }
+  .risk-forecast-section h2 {
+    font-size: clamp(1.4rem); /* scales with screen size */
+    text-align: center;
+    word-break: break-word;
+    line-height: 1.2;
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+  }
+  .info-card-light {
+    width: 100%; /* Stack vertically on small screens */
+  }
+  .trail-table,
+  .trail-table thead,
+  .trail-table tbody,
+  .trail-table th,
+  .trail-table td,
+  .trail-table tr {
+    display: block;
+    width: 100%;
+  }
+
+  .trail-table thead {
+    display: none; /* Hide header on mobile */
+  }
+
+  .trail-table tr {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid #2a3946;
+    background: #111f2c;
+    border-radius: 1rem;
+  }
+
+  .trail-table td {
+    text-align: left;
+    padding: 0.8rem 1rem;
+    position: relative;
+    white-space: normal;
+  }
+
+  .trail-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+    color: #c7d9e5;
+    margin-bottom: 0.3rem;
+  }
+}
+@media (max-width: 65em) {
   .footer-content,
   .two-grid-columns {
     flex-direction: column;
@@ -1855,145 +1984,5 @@ a.link-box p {
   }
   h1 {
     font-size: clamp(2rem, 4vw, 3.2rem);
-  }
-}
-/*--current status--*/
-@media (max-width: 992px) {
-  .two-grid-columns,
-  .four-grid-column,
-  .footer-content {
-    flex-direction: column;
-    gap: 3rem;
-  }
-
-  .hero-left-text,
-  .card-left,
-  .card-right {
-    width: 100%;
-  }
-
-  .info-card-light {
-    width: 100%;
-    height: auto;
-  }
-
-  .risk-card,
-  .two-grid-column,
-  .footer-content {
-    flex-wrap: wrap;
-  }
-  .main-grid {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-  }
-  h1 {
-    font-size: clamp(2rem, 5vw, 3.2rem);
-  }
-  p,
-  li {
-    font-size: clamp(0.9rem, 2.5vw, 1rem);
-  }
-  .image-content img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  .text-content {
-    width: 100%;
-    max-width: 100%;
-    text-align: left;
-  }
-  .table-container {
-    overflow-x: auto;
-    width: 100%;
-  }
-  .outline-card {
-    word-break: break-word;
-    height: 80vh;
-  }
-}
-@media (max-width: 768px) {
-  .trail-table th,
-  .trail-table td {
-    font-size: 0.85rem;
-    padding: 0.8rem 1rem;
-    word-break: break-word;
-  }
-
-  .trail-table th {
-    white-space: nowrap;
-  }
-
-  .trail-table td {
-    white-space: normal;
-  }
-}
-@media (max-width: 600px) {
-  .trail-table,
-  .trail-table thead,
-  .trail-table tbody,
-  .trail-table th,
-  .trail-table td,
-  .trail-table tr {
-    display: block;
-    width: 100%;
-  }
-
-  .trail-table tr {
-    margin-bottom: 2rem;
-    border: 1px solid #2a3946;
-    padding: 1rem;
-    background: #111f2c;
-    border-radius: 1rem;
-  }
-
-  .trail-table th {
-    display: none;
-  }
-
-  .trail-table td {
-    text-align: left;
-    padding: 0.5rem 0;
-    position: relative;
-  }
-
-  .trail-table td::before {
-    content: attr(data-label);
-    font-weight: bold;
-    display: block;
-    color: #c7d9e5;
-    margin-bottom: 0.3rem;
-  }
-}
-@media (max-width: 768px) {
-  .what-causes {
-    flex-direction: column;
-    padding: 2rem 1rem;
-    align-items: center;
-  }
-
-  .cause-title,
-  .tab-container {
-    width: 100%;
-    text-align: center;
-  }
-
-  .tab-content-wrapper {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .rounded-corners {
-    width: 100%;
-  }
-  .tab-buttons ul {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .tab-button {
-    font-size: 0.9rem;
-    padding: 12px 24px;
-    text-align: center;
   }
 }
