@@ -1857,7 +1857,7 @@ a.link-box p {
     font-size: clamp(2rem, 4vw, 3.2rem);
   }
 }
-/*current status--*/
+/*--current status--*/
 @media (max-width: 992px) {
   .two-grid-columns,
   .four-grid-column,
