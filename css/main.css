@@ -583,6 +583,7 @@ a.link-box p {
 
 .icon-and-text-box {
   width: 25vw;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1303,6 +1304,33 @@ a.link-box p {
     transform: rotate(315deg);
   }
 
+  .submenu {
+    display: none;
+
+    direction: column;
+  }
+
+  .has-submenu.open .submenu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .has-submenu > a::after {
+    float: right;
+
+    margin-left: 10px;
+
+    font-size: 0.7rem;
+
+    transform: rotate(0deg);
+
+    transition: transform 0.3s;
+  }
+
+  .has-submenu.open > a::after {
+    transform: rotate(180deg);
+  }
+
   /*---------grids and columns------------*/
   .two-column-feature-image {
     display: flex;
@@ -1317,9 +1345,24 @@ a.link-box p {
     padding: 3rem 3rem;
     gap: 1.5rem;
   }
+
+  /*------specific-----*/
+
+  .tab-container {
+    height: auto;
+  }
+
+  .tab-content-wrapper {
+    height: auto;
+  }
+
+  .dark-text-box {
+    height: 82vh;
+    text-align: center;
+  }
 }
 
-@media (max-width: 65em) {
+@media (max-width: 80em) {
   /*----------heros-----------*/
   .hero-left {
     padding: 5rem 3rem;
@@ -1336,6 +1379,37 @@ a.link-box p {
 
   .hero-left-text p {
     padding-right: 0rem;
+  }
+
+  /*---------navigation------------*/
+
+  .sub-nav {
+    height: auto;
+    background-color: #111f2c;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    margin-bottom: 3rem;
+  }
+
+  .sub-nav-text {
+    text-align: center;
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .sub-nav-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 
   /*---------grids and columns------------*/
@@ -1358,6 +1432,10 @@ a.link-box p {
     align-items: flex-start;
   }
 
+  .info-card {
+    height: auto;
+  }
+
   /*---------specific------------*/
   .campaign-cards {
     width: 100%;
@@ -1368,7 +1446,8 @@ a.link-box p {
   }
 
   .what-causes {
-    padding: 0;
+    height: auto;
+    padding: 1rem;
 
     display: flex;
     flex-direction: column;
@@ -1382,6 +1461,74 @@ a.link-box p {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+  }
+
+  .tab-container {
+    height: auto;
+  }
+
+  .tab-content-wrapper {
+    height: auto;
+  }
+
+  #recognizing-hypothermia {
+    height: auto;
+  }
+
+  .blue-text-box {
+    height: 80vh;
+  }
+}
+
+@media (max-width: 62em) {
+  /*---------grids and columns------------*/
+
+  .info-card {
+    width: 100%;
+    height: 40vh;
+    gap: 1rem;
+  }
+
+  .two-grid-column {
+    height: auto;
+  }
+
+  .three-grid-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .icon-and-text-box {
+    width: 100%;
+    height: auto;
+  }
+
+  .emergency-grid {
+    height: auto;
+    background: linear-gradient(180deg, #08151f, #1b303f, #4a748d);
+    text-align: center;
+
+    padding: 1rem;
+  }
+
+  .text-column-for-three-grid-column {
+    width: 100%;
+    text-align: center;
+  }
+
+  #background-solid-box {
+    padding: 1.5rem 0.5rem;
+  }
+
+  /*---------specific------------*/
+
+  #what-to-do-avalanche {
+    height: auto;
+  }
+
+  .blue-text-box {
+    height: 40vh;
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -1626,13 +1773,33 @@ a.link-box p {
   .tab-content-wrapper-row {
     flex-direction: column;
   }
+
+  .blue-text-box {
+    height: 80vh;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .dark-text-box {
+    height: auto;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0rem;
+  }
 }
+
 /*--fix--*/
 .hero-middle,
 #emergency-hero,
 #status-hero,
 #involved-hero,
 #before-you-go-avalanche,
+#before-you-go-hypothermia,
 #hypothermia-emergency-response,
 #first-aid-bg {
   height: auto;
@@ -1683,7 +1850,9 @@ a.link-box p {
     overflow-x: auto;
     width: 100%;
   }
-  h1 { font-size: 3.2rem; }
+  h1 {
+    font-size: 3.2rem;
+  }
   h1 {
     font-size: clamp(2rem, 4vw, 3.2rem);
   }
@@ -1709,39 +1878,40 @@ a.link-box p {
   }
 
   .risk-card,
-.two-grid-column,
-.footer-content {
-  flex-wrap: wrap;
-}
-.main-grid {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-}
-h1 {
-  font-size: clamp(2rem, 5vw, 3.2rem);
-}
-p, li {
-  font-size: clamp(0.9rem, 2.5vw, 1rem);
-}
-.image-content img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-.text-content {
-  width: 100%;
-  max-width: 100%;
-  text-align: left;
-}
-.table-container {
-  overflow-x: auto;
-  width: 100%;
-}
-.outline-card {
-  word-break: break-word;
-  height: 80vh;
-}
+  .two-grid-column,
+  .footer-content {
+    flex-wrap: wrap;
+  }
+  .main-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  h1 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+  }
+  p,
+  li {
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+  }
+  .image-content img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .text-content {
+    width: 100%;
+    max-width: 100%;
+    text-align: left;
+  }
+  .table-container {
+    overflow-x: auto;
+    width: 100%;
+  }
+  .outline-card {
+    word-break: break-word;
+    height: 80vh;
+  }
 }
 @media (max-width: 768px) {
   .trail-table th,
